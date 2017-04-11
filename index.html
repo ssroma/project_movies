@@ -5,18 +5,34 @@
 	<title> MOVIES</title>
 	<meta charset="UTF-8" />
  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 	<link rel="stylesheet" href="css/reset.scss" />
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
 <div id="wrapper">
 
 	<nav class="main_div">
+		<header> 
+		<a alt="Home Page" href="index.html"><img alt="Movies Logo" src="" /></a>
 		<h1>Movies Reviews</h1>
 		<h4>The latest reviews ever.</h4>
+		</header>
 	</nav>
-	<div class="main_contend">
 
-	</div>
+	<div class="main_content">
+		<div id="main_form">
+			<form action="#" method="GET">
+				<p>Search <input type="text" name="movie_search" id="movie_search" placeholder="Search by NAME or ID"/></p>
+				<p><input type="Submit" name="movie_search" id="movie_search"/></p>
+			</form>	
+		</div> <!-- main_form -->	
+
+		<div id="response_div">
+
+			the result of the search will show here.
+
+		</div> <!-- response_div -->	
+	</div>  <!-- main_content -->	
 
 </div> <!-- Wrapper -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
